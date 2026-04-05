@@ -1,10 +1,10 @@
 # EEG-MotorImagery-Classification-Using-Random-Forest
 This repository contains the implementation of signal processing and feature extraction techniques for **Motor Imagery (MI) EEG datasets**. The project focuses on processing neural signals to identify patterns associated with imagined movements, a core component of Brain-Computer Interface (BCI) systems.
 
-## 🚀 Overview
+## Overview
 The goal of this project is to transform raw EEG data into a structured feature matrix suitable for machine learning classification. It utilizes advanced signal processing methods to extract frequency-domain and time-domain characteristics from `.mat` files.
 
-## 📊 Dataset Description
+## Dataset Description
 The data used in this project follows a specific experimental paradigm for Motor Imagery:
 * **Experimental Tasks:** Imagination of movement for the **Left Hand (LH)**, **Right Hand (RH)**, and **Both Feet (F)**.
 * **Paradigm Details:** * Trials begin with a blank screen ($t=2s$).
@@ -12,15 +12,14 @@ The data used in this project follows a specific experimental paradigm for Motor
     * Data was recorded from healthy subjects using devices such as **g.tec** and **Neuroscan** at sampling rates of **250Hz - 256Hz**.
 * **Data Source:** Lab. for Advanced Brain Signal Processing (RIKEN) in collaboration with Shanghai Jiao Tong University.
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Language:** Python
 - **Libraries:** - `MNE`: For EEG/MEG data handling.
   - `SciPy`: For signal processing (Welch’s method, integration).
   - `NumPy` & `Pandas`: For data manipulation.
   - `Matplotlib`: For signal visualization.
 
-## 🔍 How It Works (Technical Pipeline)
-
+## How It Works (Technical Pipeline)
 The implementation follows a structured signal processing pipeline to transform raw EEG signals into meaningful features:
 
 ### 1. Data Loading & Preprocessing
